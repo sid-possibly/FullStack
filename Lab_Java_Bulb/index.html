@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Light Bulb Toggle</title>
+    <style>
+        .container { text-align: center; margin-top: 20px; }
+        img { margin-bottom: 15px; }
+        button { padding: 10px 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif" width="100" height="180">
+    <br>
+    <button onclick="turnOff()">Left (Off)</button>
+    <button onclick="turnOn()">Right (On)</button>
+</div>
+    
+<script>
+    function turnOn() {
+        document.getElementById('bulb').src = "https://www.w3schools.com/js/pic_bulbon.gif";
+    }
+
+    function turnOff() {
+        document.getElementById('bulb').src = "https://www.w3schools.com/js/pic_bulboff.gif";
+    }
+</script>
+
+</body>
+</html>
