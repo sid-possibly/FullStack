@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab Sheet 1</title>
+</head>
+<body>
+    <h1>Lab Sheet 1</h1>
+    <p id = "output"></p>
+    <p id = "output2"></p>
+    <p id = "output3"></p>
+    <p id = "output4"></p>
+    <p id = "output5"></p>
+        <script>
+            let a = 10;
+            let b = "20";
+            console.log(a + b);
+            document.getElementById("output").innerHTML = a + b;
+
+
+            let n = -1;
+            if (n > 0) {
+                document.getElementById("output2").innerHTML = "Positive";
+                console.log("Positive");
+            } else if (n < 0) {
+                document.getElementById("output2").innerHTML = "Negative";
+                console.log("Negative");
+            } else {
+                document.getElementById("output2").innerHTML = "Zero";
+                console.log("Zero");
+            }
+            
+
+            const student ={
+                name: "Tanmay J",
+                age: 20,
+                grade: "O"
+            };
+
+            document.getElementById("output3").innerHTML = "Name: " + student.name + "<br>Age: " + student.age + "<br>Grade: " + student.grade;
+            console.log(student.name);
+            console.log(student.age);   
+            console.log(student.grade);
+
+
+            let arr = [1, 2, 3, 4, 5];
+            for(let i=0; i < arr.length; i++){
+                console.log(arr[i]);
+                document.getElementById("output4").innerHTML += arr[i] + " ";
+            }
+
+            let arr2 = [12, 7, 9, 20 ,18];
+            let count_even = 0;
+            let count_odd = 0;
+            for(let i=0; i < arr2.length; i++){
+                if(arr2[i] % 2 === 0){
+                    console.log(arr2[i] + " is even");
+                    count_even++;
+                } else {
+                    console.log(arr2[i] + " is odd");
+                    count_odd++;
+                }
+            }
+
+            document.getElementById("output5").innerHTML = "Even numbers: " + count_even + "<br>Odd numbers: " + count_odd;
+
+        </script>
+</body>
+</html>
